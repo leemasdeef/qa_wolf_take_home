@@ -7,9 +7,9 @@ async function sortHackerNewsArticles() {
   const isSorted = isSortedByAge(articles);
 
   console.log(
-    isSorted
-      ? console.log("The first 100 articles are correctly sorted by age.")
-      : console.log("The first 100 articles are not correctly sorted by age.")
+    `The first 100 articles are ${
+      isSorted ? `correctly` : `not correctly`
+    } sorted by age.`
   );
 
   return isSorted;
